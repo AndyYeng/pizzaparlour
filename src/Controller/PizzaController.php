@@ -15,4 +15,12 @@ final class PizzaController extends AbstractController
             'controller_name' => 'PizzaController',
         ]);
     }
+    #[Route('/categorie', name: 'app_categorie')]
+    public function categorie(): Response
+    {
+
+        return $this->render('pizza/categorie.html.twig', [
+            'controller_name' => 'PizzaController',
+        ]);
+    }
 }
