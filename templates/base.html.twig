@@ -24,9 +24,9 @@
         <nav class="nav bg-warning">
             <div class="col-10">
                 <a href="{{ path('app_home') }}" class="btn btn-danger">Home</a>
-                <a href="{{ path('app_categorie') }}" class="btn btn-danger">Categories</a>
+                <a href="{{ path('app_categories') }}" class="btn btn-danger">Categories</a>
                 {% if app.user %}
-                    <a href="" class="btn btn-danger">Mijn bestellingen</a>
+                    <a href="{{ path('app_takeout') }}" class="btn btn-danger">Mijn bestellingen</a>
                 {% endif %}
                 <a href="{{ path('app_contact') }}" class="btn btn-danger">Contact</a>
             </div>

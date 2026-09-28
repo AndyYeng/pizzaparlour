@@ -4,13 +4,13 @@
 
 {% block body %}
 <div class="container">
-    <h2>Categories</h2>
+    <h2>{{ categories.name }}</h2>
     <div class="row">
-        {% for category in categories %}
+        {% for category in categories.pizzas %}
             <div class="card">
                 <h2 class="card-title">{{ category.name }}</h2>
                 <div class="card-body">
-                    <a href="{{ path('app_category', {'id': category.id}) }}" class="btn btn-primary">Pizzas bekijken</a>
+                    <a href="{{ path('app_pizzas') }}" class="btn btn-primary">pizza bekijken</a>
                 </div>
             </div>
         {% endfor %}
